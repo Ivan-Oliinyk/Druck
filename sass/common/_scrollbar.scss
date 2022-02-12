@@ -7,11 +7,11 @@
 
 /* ползунок скроллбара */
 ::-webkit-scrollbar-thumb {
-  background-color: yellow;
+  background-color: black;
   border-radius: 9em;
-  box-shadow: inset 1px 1px 10px yellow;
+  box-shadow: inset 1px 1px 10px black;
   border-radius: 5px;
-  border: 1px solid white;
+  // border: 1px solid white;
 }
 
 ::-webkit-scrollbar-thumb:hover {

@@ -34,6 +34,7 @@
         text-align: center;
         line-height: 24px;
         text-transform: uppercase;
+        text-shadow: 0 0 3px black;
       }
 
       p:not(:last-of-type) {
@@ -53,8 +54,8 @@
 
         .after {
           position: absolute;
-          right: -25px;
-          bottom: -19px;
+          right: -30px;
+          bottom: -30px;
           font-size: 40px;
           transform: rotate3d(0, 0, -1, 405deg);
         }
@@ -65,5 +66,47 @@
 
 @media screen and (max-width: 1200px) {
   .hero {
+    .img-wrapper {
+      img {
+        width: 432px;
+        height: 107px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero {
+    .hero-description {
+      .img-wrapper {
+        img {
+          width: calc(432px * 0.8);
+          height: calc(107px * 0.8);
+        }
+      }
+
+      .text {
+        font-size: 15px;
+        width: 400px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hero {
+    .hero-description {
+      .img-wrapper {
+        img {
+          width: calc(432px * 0.6);
+          height: calc(107px * 0.6);
+        }
+      }
+
+      .text {
+        font-size: 14px;
+        width: 300px;
+      }
+    }
   }
 }
