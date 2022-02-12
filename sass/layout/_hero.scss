@@ -30,14 +30,15 @@
       color: $color-white;
       width: 610px;
 
-      p {
+      h1,
+      h2 {
         text-align: center;
         line-height: 24px;
         text-transform: uppercase;
         text-shadow: 0 0 3px black;
       }
 
-      p:not(:last-of-type) {
+      h1 {
         margin-bottom: 40px;
       }
 

@@ -6,6 +6,10 @@
 @import "./common/global";
 @import "./common/scrollbar";
 
+//components
+@import "./components/title";
+
 // layout
 @import "./layout/header";
 @import "./layout/_hero";
+@import "./layout/aboutUs";
