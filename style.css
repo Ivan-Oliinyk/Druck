@@ -7,6 +7,7 @@
   --yellow: #ffed00;
 }
 
+/* NAVBAR START*/
 .navbar {
   position: relative;
   background-color: #000;
@@ -72,6 +73,11 @@
   top: 12px;
 }
 
+.only-mobile {
+  display: none;
+}
+/* NAVBAR END */
+
 @media screen and (max-width: 1600px) {
   .navbar {
     padding: 20px 150px;
@@ -101,12 +107,22 @@
 
 @media screen and (max-width: 992px) {
   .navbar .container-fluid {
-    max-width: 100px;
+    width: 100%;
+  }
+
+  .navbar .navbar-nav .nav-link {
+    padding: 20px 0;
+    width: 100%;
+    text-align: center;
   }
 
   .navbar .nav-feedback {
     top: 25px;
     left: 40%;
+  }
+
+  .only-mobile.nav-phone {
+    text-align: center;
   }
 }
 
@@ -117,11 +133,21 @@
 }
 
 @media screen and (max-width: 576px) {
+  .mobile-hide {
+    display: none;
+  }
+
+  .only-mobile {
+    display: block;
+  }
+
   .navbar {
     padding: 20px;
   }
 
   .navbar .nav-feedback {
-    left: 20%;
+    left: none;
+    right: 20px;
+    justify-content: flex-end;
   }
 }
