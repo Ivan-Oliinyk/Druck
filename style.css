@@ -1,0 +1,127 @@
+* {
+  box-sizing: border-box;
+  font-family: "Roboto";
+}
+
+:root {
+  --yellow: #ffed00;
+}
+
+.navbar {
+  position: relative;
+  background-color: #000;
+  padding: 20px 256px 20px 166px;
+  font-size: 17px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar .container-fluid {
+  margin: 0;
+  justify-content: flex-start;
+  max-width: 600px;
+}
+
+.navbar .navbar-nav .nav-link {
+  color: var(--yellow);
+  text-transform: uppercase;
+  font-size: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.navbar .navbar-toggler {
+  border: 2px solid yellow;
+}
+
+.navbar .navbar-toggler .navbar-toggler-icon {
+  background: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='yellow' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>");
+}
+
+.nav-phone {
+  color: var(--yellow);
+  font-size: inherit;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-phone span,
+.nav-phone a {
+  line-height: 1;
+  font-size: inherit;
+  text-transform: uppercase;
+}
+
+.nav-phone a {
+  text-decoration: none;
+  color: var(--yellow);
+  font-size: inherit;
+}
+
+.navbar .btn {
+  text-transform: uppercase;
+  font-size: inherit;
+  margin-left: 30px;
+  font-weight: 700;
+}
+
+.navbar .nav-feedback {
+  display: flex;
+  position: absolute;
+  left: 60%;
+  top: 12px;
+}
+
+@media screen and (max-width: 1600px) {
+  .navbar {
+    padding: 20px 150px;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .navbar {
+    padding: 20px 100px;
+  }
+
+  .navbar .container-fluid {
+    max-width: 510px;
+  }
+
+  .navbar .nav-feedback {
+    left: 50%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .navbar {
+    padding: 20px 40px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .navbar .container-fluid {
+    max-width: 100px;
+  }
+
+  .navbar .nav-feedback {
+    top: 25px;
+    left: 40%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navbar .nav-feedback {
+    left: 25%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .navbar {
+    padding: 20px;
+  }
+
+  .navbar .nav-feedback {
+    left: 20%;
+  }
+}
