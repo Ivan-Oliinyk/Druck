@@ -1,0 +1,151 @@
+.contacts {
+  padding: 35px 0;
+
+  .container {
+    max-width: 1600px;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .contacts__map {
+    width: 725px;
+    height: 245px;
+
+    iframe {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .contact_info {
+    position: relative;
+    padding: 10px 50px 35px;
+    border: 2px solid $color-grey-secondary;
+
+    .info {
+      &:not(:last-of-type) {
+        margin-bottom: 15px;
+      }
+
+      font-size: 18px;
+      line-height: 1.2;
+    }
+
+    h3 {
+      margin-bottom: 30px;
+      font-size: 26px;
+      line-height: 30px;
+      font-weight: 900;
+      text-transform: capitalize;
+    }
+
+    h4 {
+      font-weight: 900;
+      margin-bottom: 5px;
+    }
+
+    a {
+      display: block;
+      text-decoration: none;
+      color: $color-black;
+
+      &:not(:last-of-type) {
+        margin-bottom: 5px;
+      }
+    }
+
+    .el {
+      position: absolute;
+      display: block;
+      background-color: $color-yellow;
+
+      &.el1 {
+        left: -2px;
+        top: -2px;
+        width: 4px;
+        height: 51px;
+      }
+
+      &.el2 {
+        left: 0;
+        top: -2px;
+        width: 100%;
+        height: 4px;
+      }
+
+      &.el3 {
+        right: -2px;
+        top: -2px;
+        width: 4px;
+        height: 160px;
+      }
+
+      &.el4 {
+        left: -2px;
+        bottom: -2px;
+        width: 4px;
+        height: 143px;
+      }
+
+      &.el5 {
+        right: 0;
+        bottom: -2px;
+        width: 100%;
+        height: 4px;
+      }
+
+      &.el6 {
+        right: -2px;
+        bottom: -2px;
+        width: 4px;
+        height: 43px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .contacts {
+    .contacts__map {
+      width: 500px;
+      height: 300px;
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .contacts {
+    .contacts__map {
+      width: 50%;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contacts {
+    .container {
+      flex-direction: column;
+    }
+
+    .contacts__map {
+      margin-bottom: 20px;
+      padding: 0 20px;
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contacts {
+    .contacts__map {
+      padding: 0 10px;
+    }
+
+    // .contact_info {
+    //   padding: 20px;
+    // }
+  }
+}
