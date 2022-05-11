@@ -197,10 +197,11 @@ body {
   font-size: inherit;
   padding-top: 0;
   padding-bottom: 0;
+  font-weight: 900;
 }
 
 .navbar .navbar-toggler {
-  border: 2px solid yellow;
+  border: 2px solid #ffed00;
 }
 
 .navbar .navbar-toggler .navbar-toggler-icon {
@@ -1379,5 +1380,11 @@ body {
   .contacts .contacts__map {
     padding: 0 10px;
   }
+}
+
+.footer {
+  width: 100%;
+  min-height: 80px;
+  background-color: #000;
 }
 /*# sourceMappingURL=main.css.map */
