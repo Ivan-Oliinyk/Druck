@@ -1387,4 +1387,62 @@ body {
   min-height: 80px;
   background-color: #000;
 }
+
+.footer .footer-navbar {
+  padding: 15px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer .list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer .list a {
+  text-decoration: none;
+  font-size: 17px;
+  line-height: 22px;
+  font-weight: 900;
+  color: #ffed00;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 992px) {
+  .footer .container {
+    max-width: 768px;
+  }
+  .footer .list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .footer .list a {
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 900;
+    color: #ffed00;
+    text-transform: uppercase;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer .footer-navbar {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .footer .list {
+    display: none;
+  }
+}
 /*# sourceMappingURL=main.css.map */
